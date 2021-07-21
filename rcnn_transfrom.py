@@ -8,7 +8,7 @@ from typing import List, Tuple, Dict, Optional
 from torchvision.models.detection.image_list import ImageList
 from torchvision.models.detection.roi_heads import paste_masks_in_image
 
-
+############# customize
 @torch.jit.unused
 def _resize_image_and_masks_onnx(image, self_min_size, self_max_size, target,mode):
     # type: (Tensor, float, float, Optional[Dict[str, Tensor]]) -> Tuple[Tensor, Optional[Dict[str, Tensor]]]
