@@ -2,7 +2,7 @@
 
 Before Image goes into mask rcnn backbone module , image is resized to fixed size to get good features. 
 When resizing image, generally Bilinear interpolation is used.
-In this repository code, there're many kind of interpolation methods to resize 
+There're many kind of interpolation methods to resize in this repository code. 
 
 ![](./assets/main.jpg)
 
@@ -20,11 +20,13 @@ In this repository code, there're many kind of interpolation methods to resize
     - nearest
 
 
+
 > Usage
 
-'''{.bash}  
+```{.bash}  
 python train.py --dt pf --model  bicubic -o ./model/something.pth
-'''
+```
+
 
 
 ### Secondary options 
@@ -36,9 +38,22 @@ python train.py --dt pf --model  bicubic -o ./model/something.pth
 - --device  : default = 'cuda:0'
 - --workers : default = 4 
 
-## evaluate
+## Evaluate
+About model itself 
+- the number of parameter 
+About performance
+- mAP
+    - mask
+    - bbox
 
-## inference
+> Jupyter (interactive) 
+: evaluate.ipynb 
 
+> Shell
+
+
+## Inference
+
+## ETC
 
 > **reference**
