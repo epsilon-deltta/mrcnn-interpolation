@@ -8,7 +8,7 @@ if __name__ == '__main__' :
     e.g)  
     python train.py --dt pf --model pf_bicubic
     '''
-    parser = argparse.ArgumentParser("Train Mask R-CNN model",epilog=exam_code)
+    parser = argparse.ArgumentParser("Train Mask R-CNN model",epilog=exam_code)   
     # setting
     parser.add_argument('-d'  ,'--dt'      ,default='pf'      ,metavar='{pf,bln}' , help='Dataset')
     parser.add_argument('-m'  ,'--model'   ,default='bicubic' ,metavar='{...}'    ,help='model class name')
