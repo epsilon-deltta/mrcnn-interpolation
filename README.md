@@ -1,3 +1,14 @@
+### What about?  Instance segmentation model : Mask-RCNN !   
+### So what : Improved performance!
+
+> input
+![](./sample/pds1.jpg)
+
+**Mask-RCNN Caculates....**
+
+> output
+![](./sample/pre_pds1.jpg)
+
 
 ### Mask rcnn transfrom layer Interpolation experiments
 
@@ -40,11 +51,13 @@ python train.py --dt pf --model  bicubic -o ./model/something.pth
 - --device  : default = 'cuda:0'
 - --workers : default = 4 
 
-
+<!-- ### pretrained model 
+(not read) We will provide this pretrained models soon.  
+😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢😢       -->
 
 ## Evaluate
-About model itself 
-- the number of parameter 
+<!-- About model itself  -->
+<!-- - the number of parameter  -->
 About performance
 - mAP
     - mask
@@ -56,26 +69,41 @@ About performance
 
 > Shell
 
-```python:howtoevaluate
+```bash:howtoevaluate
 python evaluate.py -m /path/to/modelA.pth /path/to/modelB.pth -o /where/to/save/figure_dir
 ```
-### option
+### options
 - -m ,--model (default) ./models/*.pth 
 - -o ,--output (default) false (false : prints evaluation results on console, true : saves graph images in ./results directory )
 
 e.g )
-```python:howtoevaluate
+```bash:howtoevaluate
 python evaluate.py 
 python evaluate.py -m /path/to/modelA.pth /path/to/modelB.pth -o true
 python evaluate.py -o true
 python evaluate.py -m /path/to/modelA.pth /path/to/modelB.pth 
 ```
-<!-- 
- output : modelName_ap_epochs.jpg , modelName_ap_table.jpg
--->
+
+image output : modelName_ap_epochs.jpg , modelName_ap_table.jpg
+
 ## Inference
+Adjust bicubic mask rcnn to your image.
+
+> Bash Usage
+
+```bash:  
+python inference.py -m ./models/pf_4_nearest.pth -i ./input.jpg -o ./output.jpg
+```
+### options
+- -m ,--model (default) './models/pf_4_bicubic.pth' 
+- -i ,--input (default) './sample/pds1.jpg'
+- -o ,--output (default) './sample/pre_pds1.jpg' 
+
+<!-- > Library Usage -->
 
 ## ETC
 
-> **reference**
+  If you have a question , feel free to ask me.
+
+<!-- > **reference** -->
 
