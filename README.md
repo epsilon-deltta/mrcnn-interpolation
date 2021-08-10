@@ -17,9 +17,10 @@ When resizing image, generally Bilinear interpolation is used.
 There're many kind of interpolation methods to resize in this repository code. 
 
 ![](./assets/main.jpg)
+![](./assets/maskap.jpg)
 
 
-## train
+## Train
 ### main options
 - --dt : dataset
 
