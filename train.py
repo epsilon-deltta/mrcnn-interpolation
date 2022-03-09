@@ -21,7 +21,7 @@ if __name__ == '__main__' :
     parser.add_argument('-de'  ,'--device'   ,default= 'cuda:0'                      ,help='device e.g} cuda:0')
 
     args = parser.parse_args()
-
+    
     # args edit
     args.dt = args.dt.lower()
     if args.dt == 'pf' or args.dt == 'pennfudan':
